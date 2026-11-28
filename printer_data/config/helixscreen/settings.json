@@ -130,7 +130,7 @@
             "temperature_sensor cartographer",
             "temperature_sensor host"
           ],
-          "timestamp": "2026-11-27T20:51:03Z"
+          "timestamp": "2026-11-28T00:34:33Z"
         },
         "optional": [
           "temperature_fan controller_fan_rear",
