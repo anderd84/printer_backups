@@ -1,0 +1,322 @@
+{
+  "active_printer_id": "default",
+  "config_version": 35,
+  "dark_mode": true,
+  "display": {
+    "bed_mesh_render_mode": 0,
+    "dim_brightness": 30,
+    "dim_sec": 600,
+    "drm_device": "",
+    "gcode_render_mode": 0,
+    "glass_probe": {
+      "board": "egl/4c/100bm/800x480/32bpp",
+      "frame_ms": 9.182654,
+      "passed": false,
+      "version": "1.1.1 (334379d)"
+    },
+    "gpu_3d_blocked": false,
+    "gpu_blur_blocked": false,
+    "screensaver_type": "starfield",
+    "sleep_sec": 3600,
+    "theme": "onedark"
+  },
+  "gcode_viewer": {
+    "tube_sides": 4
+  },
+  "input": {
+    "calibration": {
+      "a": 1.0,
+      "b": -0.012270030565559864,
+      "c": -0.04373374208807945,
+      "d": -0.001900003058835864,
+      "e": 1.0,
+      "f": 0.012558553367853165,
+      "rotation": 0,
+      "valid": true
+    },
+    "long_press_time": 500,
+    "scroll_guard": true,
+    "scroll_limit": 10,
+    "scroll_throw": 25,
+    "touch_device": "",
+    "touch_range": {
+      "max_x": 4065,
+      "max_y": 4082,
+      "min_x": -34,
+      "min_y": 30,
+      "rotation": 0,
+      "swap_axes": false,
+      "valid": true
+    }
+  },
+  "language": "en",
+  "log_path": "/tmp/helixscreen.log",
+  "motion": {
+    "jog_mode": 1
+  },
+  "printers": {
+    "default": {
+      "bed_occupancy": {
+        "last_occupied": "{\"filename\":\"Voron Trident Handles_PETG_5h23m.gcode\",\"job_id\":\"000001\",\"object_height\":28.9,\"start_time\":1795805211.5234067}",
+        "outlines": "{\"filename\":\"Voron Trident Handles_PETG_5h23m.gcode\",\"objects\":[[[35.8,46.3],[181.8,46.3],[209.8,54.7],[210.2,55.1],[210.2,67.3],[209.8,67.7],[180.8,67.7],[35.8,56.3],[35.8,46.3]],[[25.9,137.7],[220.1,137.7],[220.1,203.7],[25.9,203.7]],[[25.9,69.7],[220.1,69.7],[220.1,135.7],[25.9,135.7]]]}"
+      },
+      "default_macros": {
+        "cooldown": "SET_HEATER_TEMPERATURE HEATER=extruder TARGET=0\nSET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=0",
+        "load_filament": {
+          "gcode": "LOAD_FILAMENT",
+          "label": "Load"
+        },
+        "macro_1": {
+          "gcode": "HELIX_CLEAN_NOZZLE",
+          "label": "Clean Nozzle"
+        },
+        "macro_2": {
+          "gcode": "HELIX_BED_MESH_IF_NEEDED",
+          "label": "Bed Level"
+        },
+        "unload_filament": {
+          "gcode": "UNLOAD_FILAMENT",
+          "label": "Unload"
+        }
+      },
+      "enclosure_style": 1,
+      "extra_sensors": {},
+      "fans": {
+        "chamber": "fan_generic nevermore",
+        "exhaust": "fan_generic exhaust_fan",
+        "hotend": "heater_fan hotend_fan",
+        "part": "fan"
+      },
+      "filament": {
+        "auto_open_editor": true,
+        "presets_heat_bed_and_chamber": true
+      },
+      "hardware": {
+        "expected": [
+          "heater_bed",
+          "extruder",
+          "fan",
+          "heater_fan hotend_fan",
+          "led caselight"
+        ],
+        "last_snapshot": {
+          "fans": [
+            "temperature_fan controller_fan_rear",
+            "temperature_fan controller_fan_front",
+            "fan_generic exhaust_fan",
+            "fan_generic nevermore",
+            "fan",
+            "heater_fan hotend_fan"
+          ],
+          "filament_sensors": [],
+          "heaters": [
+            "heater_bed",
+            "extruder"
+          ],
+          "leds": [
+            "led caselight",
+            "neopixel toolhead_light"
+          ],
+          "sensors": [
+            "temperature_fan controller_fan_rear",
+            "temperature_fan controller_fan_front",
+            "temperature_sensor EBB_NTC",
+            "temperature_sensor cartographer_coil",
+            "temperature_sensor cartographer",
+            "temperature_sensor host"
+          ],
+          "timestamp": "2026-11-27T20:51:03Z"
+        },
+        "optional": [
+          "temperature_fan controller_fan_rear",
+          "temperature_fan controller_fan_front"
+        ]
+      },
+      "heaters": {
+        "bed": "heater_bed",
+        "hotend": "extruder"
+      },
+      "hostname": "trident",
+      "leds": {
+        "auto_state": {
+          "strips": [
+            "led caselight"
+          ]
+        },
+        "light_button_pending": null,
+        "selected": [],
+        "strip": "led caselight"
+      },
+      "maintenance": {
+        "meters": {
+          "filter": {
+            "interval_h": 200,
+            "notified": false,
+            "used_h": 3.4677777777782257
+          },
+          "nozzle": {
+            "interval_h": 500,
+            "notified": false,
+            "used_h": 3.4677777777782257
+          },
+          "rails": {
+            "interval_h": 300,
+            "notified": false,
+            "used_h": 3.4677777777782257
+          }
+        },
+        "total_h": 3.4677777777782257
+      },
+      "moonraker_api_key": false,
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": 7125,
+      "motion": {
+        "bed_map_clearance": 5,
+        "coarse_inner": 1.0,
+        "coarse_outer": 10.0,
+        "fine_inner": 0.10000000149011612,
+        "fine_outer": 1.0,
+        "jog_speed_xy": 6000,
+        "jog_speed_z": 600,
+        "layout": 0,
+        "show_actual_position": false,
+        "turbo_inner": 10.0,
+        "turbo_outer": 50.0
+      },
+      "panel_widgets": {
+        "home": {
+          "default": {
+            "hash": "e929f8f1f0e1e293",
+            "signature": "medium|12|8|||ams_is_tool_changer=0,ams_slot_count=0,filament_sensor_count=0,home_dryer_available=1,led_controllable=1|table=1"
+          },
+          "grid": "12x8",
+          "main_page_index": 0,
+          "next_page_id": 1,
+          "pages": [
+            {
+              "id": "main",
+              "widgets": [
+                {
+                  "col": 0,
+                  "colspan": 4,
+                  "enabled": true,
+                  "id": "printer_image",
+                  "row": 0,
+                  "rowspan": 4
+                },
+                {
+                  "col": 4,
+                  "colspan": 2,
+                  "enabled": true,
+                  "id": "temperature",
+                  "row": 0,
+                  "rowspan": 2
+                },
+                {
+                  "col": 8,
+                  "colspan": 2,
+                  "enabled": true,
+                  "id": "fan_stack",
+                  "row": 0,
+                  "rowspan": 2
+                },
+                {
+                  "col": 10,
+                  "colspan": 2,
+                  "enabled": true,
+                  "id": "notifications",
+                  "row": 0,
+                  "rowspan": 2
+                },
+                {
+                  "col": 0,
+                  "colspan": 8,
+                  "config": {
+                    "layout_style": "detailed"
+                  },
+                  "enabled": true,
+                  "id": "print_status",
+                  "row": 4,
+                  "rowspan": 4
+                },
+                {
+                  "col": 8,
+                  "colspan": 4,
+                  "enabled": true,
+                  "id": "temp_graph",
+                  "row": 2,
+                  "rowspan": 6
+                },
+                {
+                  "col": 6,
+                  "colspan": 2,
+                  "config": {
+                    "led": "led caselight"
+                  },
+                  "enabled": true,
+                  "id": "led",
+                  "row": 2,
+                  "rowspan": 2
+                },
+                {
+                  "col": 4,
+                  "colspan": 2,
+                  "enabled": true,
+                  "id": "dryer",
+                  "row": 2,
+                  "rowspan": 2
+                },
+                {
+                  "col": -1,
+                  "colspan": 2,
+                  "enabled": false,
+                  "id": "filament",
+                  "row": -1,
+                  "rowspan": 2
+                },
+                {
+                  "col": -1,
+                  "colspan": 8,
+                  "enabled": false,
+                  "id": "tips",
+                  "row": -1,
+                  "rowspan": 4
+                },
+                {
+                  "col": 6,
+                  "colspan": 2,
+                  "enabled": true,
+                  "id": "bed_temperature",
+                  "row": 0,
+                  "rowspan": 2
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "printer_image": "",
+      "printer_name": "trident",
+      "temp_sensors": {
+        "bed": "heater_bed",
+        "hotend": "extruder"
+      },
+      "type": "Voron Trident",
+      "wizard_completed": true
+    },
+    "show_printer_switcher": false
+  },
+  "sound": {
+    "output_device": "plughw:CARD=vc4hdmi0,DEV=0"
+  },
+  "sounds_enabled": false,
+  "telemetry_enabled": false,
+  "theme": {
+    "preset": 0
+  },
+  "tour": {
+    "completed": true,
+    "last_seen_version": 2
+  },
+  "wizard_completed": true
+}
