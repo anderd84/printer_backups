@@ -183,7 +183,7 @@
         "fine_outer": 1.0,
         "jog_speed_xy": 6000,
         "jog_speed_z": 600,
-        "layout": 0,
+        "layout": 2,
         "show_actual_position": false,
         "turbo_inner": 10.0,
         "turbo_outer": 50.0
